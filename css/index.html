@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Небольшая интерактивная площадка для знакомства с HTML и CSS.">
+    <title>Frontend Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="playground-card" aria-labelledby="page-title">
+            <header class="hero">
+                <p class="eyebrow">Frontend Playground</p>
+                <h1 id="page-title">Изучайте веб-технологии на практике</h1>
+                <p class="hero-copy">Небольшая страница, где базовые элементы HTML встречаются с современным CSS.</p>
+
+                <div class="technology-list" aria-label="Изучаемые технологии">
+                    <span class="technology technology--html">HTML</span>
+                    <span class="technology technology--css">CSS</span>
+                    <span class="technology technology--js">JavaScript</span>
+                    <span class="technology technology--python">Python</span>
+                </div>
+            </header>
+
+            <section class="form-panel" aria-labelledby="form-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Практика</p>
+                    <h2 id="form-title">Попробуйте элементы</h2>
+                </div>
+
+                <div class="field">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" name="name" type="text" placeholder="Например, Азамат" autocomplete="name">
+                </div>
+
+                <fieldset class="choice-group">
+                    <legend>Настройки занятия</legend>
+                    <label class="choice" for="practice-updates">
+                        <input id="practice-updates" name="practice-updates" type="checkbox">
+                        <span>Получать новые упражнения</span>
+                    </label>
+                    <label class="choice" for="beginner-level">
+                        <input id="beginner-level" name="level" type="radio" value="beginner" checked>
+                        <span>Начальный уровень</span>
+                    </label>
+                </fieldset>
+
+                <div class="field">
+                    <label for="project-file">Файл проекта</label>
+                    <p class="field-hint">Можно выбрать HTML- или CSS-файл.</p>
+                    <input class="file-control" id="project-file" name="project-file" type="file" accept=".html,.css">
+                </div>
+
+                <button class="primary-button" type="button">Начать практику</button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
